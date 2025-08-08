@@ -15,6 +15,7 @@ const Search = ({searchTerm,setSearchTerm,handlePrediction}) => {
         <input
           className="w-full h-full border-none focus:outline-none"
           value={searchTerm}
+          autoFocus
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search URL to detect"
         />
