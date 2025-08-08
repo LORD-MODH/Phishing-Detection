@@ -1,11 +1,12 @@
 
 
-const Search = ({searchTerm,setSearchTerm,setSubmitText}) => {
+const Search = ({searchTerm,setSearchTerm,handlePrediction}) => {
+
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Search :',searchTerm);
-    setSubmitText(searchTerm);
+    
+    handlePrediction(searchTerm);
     setSearchTerm('');
   }
   return (
