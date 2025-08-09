@@ -53,6 +53,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://phisher-back.onrender.com"
 ]
 
 ROOT_URLCONF = 'phishing_detector.urls'
