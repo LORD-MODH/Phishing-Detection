@@ -13,4 +13,6 @@ soupsieve==2.5
 sqlparse==0.5.3
 urllib3==2.2.2
 django-cors-headers==4.7.0
+whitenoise
+gunicorn
 # ... and a few other dependencies might be listed
