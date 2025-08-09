@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-i5k+^qh6843%u26iw999728ahnjffvhjv12f2s8vcqbm3@wf$l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    "https://phisher-back.onrender.com"
+    "phisher-back.onrender.com"
 ]
 
 
@@ -55,7 +55,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://phisher-back.onrender.com"
+    "https://phisher-man.onrender.com"
 ]
 
 ROOT_URLCONF = 'phishing_detector.urls'
