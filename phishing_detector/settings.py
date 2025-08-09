@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-i5k+^qh6843%u26iw999728ahnjffvhjv12f2s8vcqbm3@wf$l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "https://phisher-back.onrender.com"
+]
 
 
 # Application definition
