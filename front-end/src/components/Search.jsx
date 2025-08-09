@@ -1,11 +1,12 @@
 
 
-const Search = ({searchTerm,setSearchTerm,setSubmitText}) => {
+const Search = ({searchTerm,setSearchTerm,handlePrediction}) => {
+
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Search :',searchTerm);
-    setSubmitText(searchTerm);
+    
+    handlePrediction(searchTerm);
     setSearchTerm('');
   }
   return (
@@ -14,6 +15,7 @@ const Search = ({searchTerm,setSearchTerm,setSubmitText}) => {
         <input
           className="w-full h-full border-none focus:outline-none"
           value={searchTerm}
+          autoFocus
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search URL to detect"
         />
