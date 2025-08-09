@@ -30,9 +30,53 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # A curated list of high-value domains to check for typosquatting attempts.
 TARGET_DOMAINS = [
-    'google', 'paypal', 'ebay', 'amazon', 'apple', 'microsoft', 'facebook',
-    'instagram', 'twitter', 'linkedin', 'netflix', 'spotify', 'gmail', 'yahoo',
-    'bankofamerica', 'chase', 'wellsfargo', 'citibank', 'kaggle', 'yesbank'
+    # Top Global Tech & Search
+    'google', 'youtube', 'facebook', 'twitter', 'instagram', 'linkedin', 'microsoft', 
+    'apple', 'wikipedia', 'yahoo', 'bing', 'msn',
+
+    # E-commerce & Shopping
+    'amazon', 'ebay', 'walmart', 'target', 'alibaba', 'aliexpress', 'bestbuy', 
+    'ikea', 'homedepot', 'costco', 'etsy', 'rakuten', 'shopify',
+
+    # Financial & Banking (Major US & International)
+    'paypal', 'bankofamerica', 'jpmorganchase', 'chase', 'wellsfargo', 'citibank', 
+    'usbank', 'hsbc', 'barclays', 'capitalone', 'americanexpress', 'amex', 
+    'discover', 'visa', 'mastercard', 'venmo', 'cashapp', 'zelle', 'goldmansachs',
+    'morganstanley', 'fidelity', 'vanguard', 'schwab', 'tdameritrade', 'coinbase',
+    'binance', 'kraken', 'hsbc', 'santander', 'ubs',
+
+    # Streaming & Entertainment
+    'netflix', 'spotify', 'disneyplus', 'hulu', 'primevideo', 'hbomax', 'twitch',
+    'soundcloud', 'tiktok', 'espn',
+
+    # Social Media & Communication
+    'whatsapp', 'telegram', 'discord', 'reddit', 'pinterest', 'snapchat', 'zoom',
+    'skype', 'gmail', 'outlook', 'protonmail', 'slack', 'messenger',
+
+    # Cloud & Productivity
+    'dropbox', 'googledrive', 'onedrive', 'icloud', 'aws', 'azure', 'salesforce',
+    'office365', 'adobe', 'canva', 'github', 'gitlab', 'bitbucket',
+
+    # Travel & Hospitality
+    'airbnb', 'booking', 'expedia', 'uber', 'lyft', 'tripadvisor', 'marriott',
+    'hilton',
+
+    # News & Media
+    'cnn', 'bbc', 'nytimes', 'foxnews', 'theguardian', 'washingtonpost',
+
+    # Government & Tax (Common Phishing Targets)
+    'irs', 'gov', 'ssa', 'fbi', 'cia',
+
+    # Shipping & Logistics
+    'ups', 'fedex', 'usps', 'dhl',
+
+    # Other High-Value Targets
+    'craigslist', 'wordpress', 'godaddy', 'namecheap', 'roblox', 'steam',
+    'epicgames', 'verizon', 'att', 'tmobile', 'comcast', 'xfinity',
+    
+    # India-specific (based on your 'yesbank' entry)
+    'yesbank', 'hdfcbank', 'icicibank', 'axisbank', 'sbi', 'kotak', 'paytm', 
+    'phonepe', 'flipkart', 'myntra', 'hotstar'
 ]
 
 # Safe eTLD+1 domains for domain-aware thresholding
